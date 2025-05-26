@@ -1,0 +1,42 @@
+{
+	"userDetails":{
+	"Thangabalu" : 
+		{
+			"Name" : "Thangabalu",
+			"Last Name" : "R",
+			"Gender" : "Male",
+			"Mobile Number" : "9597958139",
+			"Subject" : "QA Engineer",
+			"Hobbies" : "Reading",
+			"Current Address" : "Mettur",
+			"State" : "Uttar Pradesh",
+			"City" : "Agra"
+			
+		},
+	"Ajesh" :
+	{
+		"Name" : "Ajesh",
+		 "Last Name": "V",
+		 "Gender" : "Male",
+		 "Mobile Number" : "770853278",
+		 "Subject" : "QA Engineer",
+		 "Hobbies" : "Music",
+		 "Current Address" : "Kanyakumari",
+		 "State" : "Haryana",
+		 "City" : "Panipat"
+	},
+	
+	"Ragul" :
+	{
+		         "Name" : "Ragul",
+				 "Last Name": "R",
+				 "Gender" : "Male",
+				 "Mobile Number" : "7867070002",
+				 "Subject" : "QA Engineer",
+				 "Hobbies" : "Sport",
+				 "Current Address" : "Pattukottai",
+				 "State" : "Haryana",
+				 "City" : "Panipat"
+	}
+	}
+}

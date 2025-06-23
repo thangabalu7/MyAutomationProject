@@ -22,6 +22,7 @@ public class Alerts {
 	}
 	@FindBy(xpath="//div/button[@id='alertButton']")
 	WebElement one;
+	
 	@FindBy(xpath="//div[@class='col']/button[@id='timerAlertButton']")
 	WebElement two;
 	@FindBy(xpath="//*[@id=\"confirmButton\"]")

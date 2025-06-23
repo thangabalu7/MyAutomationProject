@@ -2,13 +2,17 @@ package Demo.ReusableFuction;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.testng.IAnnotationTransformer;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.annotations.ITestAnnotation;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -17,7 +21,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.google.common.io.Files;
 
-public class Listenerss implements ITestListener {
+public class Listenerss implements ITestListener, IAnnotationTransformer {
 	WebDriver driver;
 	public ExtentSparkReporter sparkReports; // ui of the reports
 	public ExtentReports extentReports; // tester name , browsername, os
@@ -72,6 +76,13 @@ public class Listenerss implements ITestListener {
 	}
 
 	@Override
+	public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
+		// if the test is failed this method will run,This method comes from
+		// IAnnotationTransformer interface
+		annotation.setRetryAnalyzer(RetryAnalyzer.class);
+	}
+
+	@Override
 	public void onTestSuccess(ITestResult result) {
 		extentsTest.log(Status.PASS, "Test Passed");
 
@@ -83,7 +94,4 @@ public class Listenerss implements ITestListener {
 		extentReports.flush();
 
 	}
-
-
-	
 }

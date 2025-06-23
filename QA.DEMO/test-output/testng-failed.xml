@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Forms.Form">
+      <class name="Demo.Frames.Frames">
         <methods>
-          <include name="formDriver"/>
           <include name="browserSteup"/>
           <include name="closeBrowser"/>
+          <include name="mainFramesDriver"/>
         </methods>
-      </class> <!-- Forms.Form -->
+      </class> <!-- Demo.Frames.Frames -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

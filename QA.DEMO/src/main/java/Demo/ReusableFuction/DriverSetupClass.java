@@ -52,7 +52,7 @@ public class DriverSetupClass {
 
 	public static String readDate(String resource) throws IOException {
 		FileInputStream fls = new FileInputStream(
-				"C:\\Users\\thangrs\\eclipse-workspace\\QA.DEMO\\DateStore\\url.properties");
+				"C:\\Users\\thangrs\\git\\MyAutomationProject\\QA.DEMO\\DateStore\\url.properties");
 		Properties prop = new Properties();
 		prop.load(fls);
 		String datas = prop.getProperty(resource);
@@ -67,7 +67,7 @@ public class DriverSetupClass {
 
 	@AfterMethod
 	public void closeBrowser() {
-		//driver.quit();
+		driver.quit();
 	}
 
 }

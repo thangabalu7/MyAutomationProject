@@ -1,6 +1,7 @@
 package Demo.Frames;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Demo.HomePage.HomePage;
@@ -22,6 +23,7 @@ public class Frames extends DriverSetupClass {
 	Frame frm =nfc.nestedFrames();
 	Thread.sleep(3000);
 	Alerts alst = frm.farmesFrm();
+	Assert.assertTrue(false);
 	Thread.sleep(3000);
 	alst.alerts();
 	

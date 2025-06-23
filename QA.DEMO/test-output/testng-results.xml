@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-25T13:39:12 IST" name="Suite" finished-at="2025-05-25T13:39:19 IST" duration-ms="6777">
+  <suite started-at="2025-06-14T12:38:01 IST" name="Suite" finished-at="2025-06-14T12:38:38 IST" duration-ms="36202">
     <groups>
     </groups>
-    <test started-at="2025-05-25T13:39:12 IST" name="Test" finished-at="2025-05-25T13:39:19 IST" duration-ms="6777">
-      <class name="Forms.Form">
-        <test-method is-config="true" signature="browserSteup()[pri:0, instance:Forms.Form@44ebcd03]" started-at="2025-05-25T13:39:12 IST" name="browserSteup" finished-at="2025-05-25T13:39:19 IST" duration-ms="6280" status="PASS">
+    <test started-at="2025-06-14T12:38:01 IST" name="Test" finished-at="2025-06-14T12:38:38 IST" duration-ms="36202">
+      <class name="Demo.Frames.Frames">
+        <test-method is-config="true" signature="browserSteup()[pri:0, instance:Demo.Frames.Frames@44ebcd03]" started-at="2025-06-14T12:38:02 IST" name="browserSteup" finished-at="2025-06-14T12:38:10 IST" duration-ms="8565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSteup -->
-        <test-method signature="formDriver()[pri:0, instance:Forms.Form@44ebcd03]" started-at="2025-05-25T13:39:19 IST" name="formDriver" finished-at="2025-05-25T13:39:19 IST" duration-ms="290" status="PASS">
+        <test-method signature="mainFramesDriver()[pri:0, instance:Demo.Frames.Frames@44ebcd03]" started-at="2025-06-14T12:38:10 IST" name="mainFramesDriver" finished-at="2025-06-14T12:38:38 IST" duration-ms="27434" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- formDriver -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Forms.Form@44ebcd03]" started-at="2025-05-25T13:39:19 IST" name="closeBrowser" finished-at="2025-05-25T13:39:19 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- mainFramesDriver -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Demo.Frames.Frames@44ebcd03]" started-at="2025-06-14T12:38:38 IST" name="closeBrowser" finished-at="2025-06-14T12:38:38 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- Forms.Form -->
+      </class> <!-- Demo.Frames.Frames -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
